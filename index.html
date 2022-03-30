@@ -2,11 +2,34 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0.1,url=http://175.178.103.246/">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>三重式的Blog</title>
+    <title>三重式</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
-<body>
-    
+<body id="bg">
+    <div class="head">
+        <div style="margin: auto;width: 1000px;">
+            <a href="" class="he1">首页</a>
+            <a class="he2">关于</a>
+            <div ></div>
+        </div>
+        
+    </div>
+    <div></div>
+    <script>
+        window.onload = function(){
+        var array = ['url(css/img/1.png)','url(css/img/2.png)','url(css/img/3.png)','url(css/img/4.png)',
+                    'url(css/img/5.png)','url(css/img/6.png)','url(css/img/7.png)','url(css/img/8.png)',
+                    'url(css/img/9.png)'];
+                    bg.style.backgroundImage = array[Math.floor(Math.random()*array.length+0)]
+        setInterval(
+            function(){
+                var num = Math.floor(Math.random()*array.length+0)
+                bg.style.backgroundImage = array[num]
+            }
+        ,6000)
+        }
+    </script>
 </body>
 </html>
